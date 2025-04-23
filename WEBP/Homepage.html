@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home page</title>
+  <style>
+   @import url('headerCSS3.css');
+  </style>
+</head>
+<body>
+
+  <header>
+    <button id="toggleSidebar"><ion-icon name="list-outline"></ion-icon></button>
+    <h1>My Website</h1>
+	<div id="headernav">
+  <nav>
+  <ul>
+  <li><a href="#">Research</a></li>
+  <li><a href="#">Schedules</a></li>
+  <li><a href="#">Resumes</a></li>
+  <li><a href="#">Arabic</a></li>
+  <li><a href="#">quiz</a></li>
+  </ul>
+  </nav>
+  </div>
+  </header>
+
+  <aside id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Shedules</a></li>
+        <li><a href="#">Resumes</a></li>
+		<li><a href="#">Arabic</a></li>
+		<li><a href="#">quiz</a></li>
+      </ul>
+    </nav>
+  </aside>
+  
+
+  <main>
+  <h1><ion-icon name="home"></ion-icon>&nbsp Home Page</h1>
+  <div id="divh1">
+  <h2> Explore Our Navigation Bar</h2>
+  
+    <p>To help you get the most out of our website, we’ve provided a quick overview of each item in the navigation bar. Whether you’re here to learn more, get support, or explore our offerings, this guide will help you find exactly what you’re looking for.</p>
+	</div>
+	<div id="divh2">
+	<div id="divh2p2">
+	<h2><ion-icon name="reader-outline"></ion-icon> Research</h2>
+	<p>Our research page delves into the evolution of the internet, tracing its history from early networks to the global infrastructure we rely on today. We explore key technological milestones, the impact of the internet on society, and how its development varies across different regions of the world.</p>
+	</div>
+	<img src="C:\Users\Admin\Desktop\WEBP\navpic.jpg" id="imgh1">
+	</div>
+	<div id="divh3">
+	<div id="divh2p3">
+	<h2><ion-icon name="alarm-outline"></ion-icon> Schedules</h2>
+	<p>This page provides a clear overview of the weekly schedules for three team members. Whether you're coordinating meetings, planning collaborations, or just staying in sync, you’ll find all the key availability details right here.</p>
+	</div>
+	<img src="C:\Users\Admin\Desktop\WEBP\navpic.jpg" id="imgh1">
+	</div>
+	
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleSidebar');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

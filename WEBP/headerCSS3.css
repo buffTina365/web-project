@@ -1,0 +1,172 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: montserrat,sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+	  background-color: #293E70;
+    }
+
+    header {
+      display: flex;
+	  flex-wrap: wrap;
+      align-items: center;
+      background-color: #1AAEAA;
+      color: #C5F4F2;
+      padding: 1rem;
+      position: relative;
+      z-index: 1001;
+    }
+
+    #toggleSidebar {
+      background: none;
+      border: none;
+      color: #C5F4F2;
+      font-size: 35px;
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+	#toggleSidebar:hover{
+	color: orange;
+	}
+	
+
+    aside#sidebar {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 200px;
+      background-color: orange;
+      color: black;
+      height: calc(100vh - 60px);
+      transition: transform 0.3s ease;
+      transform: translateX(-100%);
+      z-index: 1000;
+    }
+
+    aside#sidebar.active {
+      transform: translateX(0);
+    }
+
+    aside nav ul {
+      list-style: none;
+      padding: 16px;
+    }
+
+    aside nav ul li {
+      margin: 25px 0;
+    }
+
+    aside nav ul li a {
+		padding-top: 9px;
+      color: #293E70;
+      text-decoration: none;
+	  
+    }
+	aside nav ul li:hover{
+		cursor: pointer;
+		background-color: white;
+	}
+	aside nav ul li a:hover{
+		color: #293E70;
+	}
+	#headernav nav{
+		margin-left: 700px;
+		font-family: impact;
+	
+	}
+	#headernav nav ul li{
+		display: inline;
+		padding-right: 10px;
+		font-size: 20px;
+		
+	}
+	#headernav nav ul li a{
+		color: #C5F4F2;
+		text-decoration: none;
+		padding-left: 5px;
+		
+
+	}
+	#headernav nav ul li a:hover{
+		color: orange;
+		text-decoration: none;
+		cursor: pointer;
+		
+
+	}
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      margin-top: 60px;
+      color: #C5F4F2;
+      font-family: montserrat,sans-serif;	  
+    }
+	#divh1{
+		
+	}
+
+	#divh2{
+		
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#divh2p2{
+		width: 800px;
+		
+	}
+	#imgh1{
+		flex-grow: 1;
+	}
+	#divh3{
+		
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#divh2p3{
+		width: 800px;
+		
+	}
+	h1{
+		font-size: 35px;
+	}
+	h2{
+		padding: 15px 20px;
+		font-size: 25px;
+		
+	}
+	p{
+		padding: 20px 50px;
+		font-size: 20px;
+	}
+	@media screen and (max-width: 700px) {
+		#headernav nav{
+			
+		   margin-left: 0px;
+		
+	
+	}
+	#headernav nav ul li{
+		display: block;
+		padding-right: 10px;
+		font-size: 20px;
+		padding-bottom: 15px;
+		
+	}
+	#headernav nav ul li a{
+		margin-left: 200px;
+		text-decoration: none;
+		border-bottom: 1px solid white;
+
+	}
+	
+	}
+	
+  
+	
