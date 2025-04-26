@@ -76,8 +76,9 @@
 		color: #293E70;
 	}
 	#headernav nav{
-		margin-left: 700px;
+		margin-left: 600px;
 		font-family: impact;
+		float:right;
 	
 	}
 	#headernav nav ul li{

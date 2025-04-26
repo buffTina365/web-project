@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research</title>
+  <style>
+    @import url('headerCSS3.css');
+
+    body {
+      margin: 0;
+     
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .welcome-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .welcome-box h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .topic-button {
+      background-color: #293E70;
+      color: #1AAEAA;
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid #4A90E2;
+      font-size: 18px;
+      cursor: pointer;
+      min-width: 250px;
+      flex: 1 1 calc(33% - 20px);
+    }
+
+    .topic-button:hover {
+      background-color: #1AAEAA;
+      color: #C5F4FE;
+    }
+
+    .topic-view {
+      display: none;
+      padding: 20px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      background-color: #1AAEAA;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #888;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-top: 30px;
+      padding-left: 12px;
+      border-left: 5px solid #666;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin-top: 20px;
+      padding-left: 15px;
+      border-left: 4px solid #aaa;
+    }
+
+    p {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <button id="toggleSidebar"><ion-icon name="list-outline"></ion-icon></button>
+  <h1>My Website</h1>
+  <div id="headernav">
+    <nav>
+      <ul>
+   <li><a href="Homepage.html">Home</a></li>
+  <li><a href="#">Schedules</a></li>
+  <li><a href="#">Resumes</a></li>
+  <li><a href="arabic.html">Arabic</a></li>
+  <li><a href="#">quiz</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<aside id="sidebar">
+  <nav>
+    <ul>
+        <li><a href="Homepage.html">Home</a></li>
+  <li><a href="#">Schedules</a></li>
+  <li><a href="#">Resumes</a></li>
+  <li><a href="arabic.html">Arabic</a></li>
+  <li><a href="#">quiz</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<main>
+  <div class="container">
+    <div class="welcome-box" id="welcomeBox">
+     <div style=" color:#293E70;">
+    <h1>Welcome to the Research Page:</h1>
+    <p>Please choose a topic below to explore the details.</p>
+	</div>
+      <div class="topics">
+        <button class="topic-button" onclick="openTopic(1)">Topic 1: Internet Infrastructure</button>
+        <button class="topic-button" onclick="openTopic(2)">Topic 2: Cybersecurity</button>
+        <button class="topic-button" onclick="openTopic(3)">Topic 3: Cloud Computing</button>
+      </div>
+    </div>
+
+    <!-- Insert Topic Details Here -->
+    <div class="topic-view" id="topic1">
+   <h2>Topic 1: Internet infrastructure</h2>
+
+  <h3>What is network infrastructure?</h3>
+  <p>Network infrastructure is the combination of hardware and software components that make modern computer networks possible. Enterprises depend on network infrastructure and the connectivity that it provides for communication between users, applications and devices that underpin most of today’s business processes.</p>
+
+  <h3>Features and components of network infrastructure</h3>
+
+  <h4>Nodes and IP addresses</h4>
+  <p>A node is a point on a network—connected to a device such as a computer, printer or modem—that can receive, send, create or store data. Networking devices, such as computers, routers and switches, need to be able to recognize, process and transmit information for network infrastructure to function. Accordingly, each node is identified by its address (known as an IP address) and granted access to the network.
+  <br> <br>
+  An Internet Protocol (IP) address is a number that’s been assigned to a node that’s connected to a computer network. Each IP address identifies the device and the network that it's connected to and its specific location on the network. When one device sends data to another, the data includes the IP addresses of both devices. Data is sent over a network, between nodes, by using routers and switches.
+</p>
+  <h4>Routers and switches</h4>
+  <p>A router is a device that sends data packets (small units of information that have been formatted for transmission over a network) between networks. Routers analyze data to determine the best path it should be sent on, relying on sophisticated routing algorithms to forward them efficiently to their destination node.<br> <br>
+A switch is a device that connects network devices and manages node-to-node communication across a network, making sure that data packets reach their intended destination. Unlike routers, which send information between networks, switches send information across networks, between connected nodes.
+</p>
+  <h4>Wired vs wireless infrastructure</h4>
+  <p>In addition to their architectural differences, wired and wireless networks play different roles in modern network infrastructure. Wired networks—where data is transmitted between nodes, switches and routers through cables—are critical to processing workloads where high bandwidth, network connectivity and security are paramount, such as large data transfers. <br><br>
+Wireless networks, however, rely on radio waves to transmit data and are more ideal for situations where bandwidth, reliability and security are not as critical. For example, home internet often relies on wireless internet connections, as do Internet of Things (IoT) connected devices ranging from refrigerators and smart TVs to autonomous cars. While not as secure as wired technologies, each generation of wireless networks is more secure and reliable than the last. For example, today’s lightning-fast 5G connections feature better encryption and authentication standards than their predecessor, 4G.
+</p>
+
+  <h3>Modern network infrastructure use cases</h3>
+
+  <h4>Personal area networks (PANs)</h4>
+  <p>Straightforward and reliable, personal area networks (PANs) connect devices that are only a few feet apart by using infrared technology. Bluetooth is one of the most popular examples of a PAN network, enabling users to connect speakers and TVs in their home with their smartphone or laptop. PANs are typically wireless, allowing a wide range of devices to connect over a small area.</p>
+
+  <h4>Local area networks (LANs)</h4>
+  <p>Local area networks (LANs) are systems that connect computers and other kinds of devices in a single location. LANs can use both wired and wireless connections, and their range depends on their network topology (the number of devices they’re connecting and the devices' physical proximity to each other). Unlike PANs, LAN connections start at a few feet and can extend to hundreds of feet in a large office setting.<br><br>
+LANs are widely used in business settings, where many users and computers need to exchange data in a limited geographical area. When they are configured correctly, LANs can be highly secure. However, they still require active measures to be taken, such as the installation of firewalls and access controls, or else the nodes they connect can fall victim to cyberattacks, data breaches and other threats.
+</p>
+
+  <h4>Metropolitan area networks (MANs)</h4>
+  <p>Like WANS, Metropolitan area networks (MANs) are made up of interconnected LANs and PANs dispersed across a physical area. MANs link local businesses, buildings on a campus, government buildings and other kinds of connected but physically separate smaller networks. Like other networks, MANs rely on a combination of wired and wireless connectivity, including fiber optics, ethernet and 5G.<br><br>
+MANs are smaller than WANs, and they’re more efficient because they don’t cover as large a physical area. While MANs are made up of smaller, interconnected networks, the security and administration of MANS is controlled by a single organization.
+</p>
+  
+  <h4>Wide area networks (WANs)</h4>
+  <p>Wide area networks (WANs) are large-scale computer networks, typically used by enterprises that need to connect offices in different physical locations. The most widely known example of a WAN is the internet itself—a network that connects billions of users and devices in physically separate locations around the globe. Another example is the financial network that provides ATM service to users of banks in different cities and countries.<br> <br>
+WANs extend much further than PANs or LANs and require different approaches to security. In addition to firewalls and encryption solutions, WANs use newer technologies such as multiprotocol label switching (MPLS) to help ensure the security of data traveling across regions and even around the globe.
+</p>
+
+  <p><strong>Source:</strong> <a href="https://www.ibm.com/think/topics/network-infrastructure" target="_blank"  style="color: #1AAEAA;" >IBM - Network Infrastructure</a></p>
+  <button class="back-button" onclick="goBack()">← Back</button>
+  </div>
+<div class="topic-view" id="topic2">
+  <h2>Topic 2: History of the Web</h2>
+
+  <h3>Where the Web was born</h3>
+  <p>Tim Berners-Lee, a British scientist, invented the World Wide Web (WWW) in 1989, while working at CERN. The Web was originally conceived and developed to meet the demand for automated information-sharing between scientists in universities and institutes around the world.</p>
+
+  <h3>How the web began</h3>
+  <p>Tim Berners-Lee wrote the first proposal for the World Wide Web in March 1989 and his second proposal in May 1990. Together with Belgian systems engineer Robert Cailliau, this was formalised as a management proposal in November 1990. This outlined the principal concepts and it defined important terms behind the Web. The document described a "hypertext project" called "WorldWideWeb" in which a "web" of "hypertext documents" could be viewed by “browsers”. <br><br>
+By the end of 1990, Tim Berners-Lee had the first Web server and browser up and running at CERN, demonstrating his ideas. He developed the code for his Web server on a NeXT computer. To prevent it being accidentally switched off, the computer had a hand-written label in red ink: "This machine is a server. DO NOT POWER IT DOWN!!" <br><br>
+The WWW design allowed easy access to existing information and an early web page linked to information useful to CERN scientists (e.g. the CERN phone book and guides for using CERN’s central computers). A search facility relied on keywords - there were no search engines in the early years.<br><br>
+Berners-Lee’s original Web browser running on NeXT computers showed his vision and had many of the features of current Web browsers. In addition, it included the ability to modify pages from directly inside the browser.
+</p>
+
+  <h3>Going global</h3>
+  <p>Thanks to the efforts of Paul Kunz and Louise Addis, the first Web server in the US came online in December 1991, once again in a particle physics laboratory: the Stanford Linear Accelerator Center (SLAC) in California. At this stage, there were essentially only two kinds of browser. One was the original development version, which was sophisticated but available only on NeXT machines. The other was the ‘line-mode’ browser, which was easy to install and run on any platform but limited in power and user-friendliness. It was clear that the small team at CERN could not do all the work needed to develop the system further, so Berners-Lee launched a plea via the internet for other developers to join in. Several individuals wrote browsers, mostly for the X-Window System. Notable among these were MIDAS by Tony Johnson from SLAC, Viola by Pei Wei from technical publisher O'Reilly Books, and Erwise by Finnish students from Helsinki University of Technology.</p>
+
+  <p><strong>Source:</strong> <a href="https://home.cern/science/computing/birth-web/short-history-web" target="_blank"  style="color: #1AAEAA;">CERN - Short History of the Web</a></p>
+  
+  <button class="back-button" onclick="goBack()">← Back</button>
+  </div>
+  <div class="topic-view" id="topic3">
+
+  <h2>Topic 3: Internet statistics in the Middle East and Lebanon</h2>
+<p>The rapid evolution of internet connectivity has reshaped economies, societies, and daily life across the globe—and the Middle East is no exception. In recent years, the region has experienced a notable surge in internet penetration, fueled by widespread smartphone adoption, government-backed digital initiatives, and the growing demand for online services. Countries in the Gulf Cooperation Council (GCC) have emerged as regional leaders in digital connectivity, while others, like Lebanon, are working to overcome infrastructure challenges and economic instability to expand access.<br><br>
+This report provides a comprehensive overview of current internet usage trends across the Middle East, with a particular focus on Lebanon. It highlights key statistics, examines infrastructure development, and explores the role of mobile internet and digital transformation in shaping the region’s future.</p> 
+
+  <h3>Regional Internet Penetration Trends in the Middle East</h3>
+  <p>Internet adoption across the Middle East has seen rapid growth in the past decade, driven by digital transformation, improved infrastructure, and widespread smartphone usage. As of early 2025, approximately 66.2% of the population in Northern Africa and Western Asia—regions that largely define the Middle East and North Africa (MENA)—were using the internet, just above the global average of 66% (Statista).<br><br>
+High-income countries in the Gulf Cooperation Council (GCC), such as the United Arab Emirates (UAE), Saudi Arabia, and Qatar, continue to lead the region with internet penetration rates exceeding 90%. For example, the UAE had an internet usage rate of 99% at the start of 2024 (DataReportal - UAE 2024).
+</p>
+
+  <h3>Lebanon’s Internet Penetration and Growth</h3>
+  <p>Lebanon has made significant progress in internet accessibility despite its economic and political instability. As of January 2025, 5.34 million people in Lebanon were internet users, bringing the internet penetration rate to 91.6%—a notable increase from 90.1% in 2024 (DataReportal - Lebanon 2025).<br><br>
+The country has a relatively young, tech-savvy population, which has embraced online communication, remote work, and digital services. The expansion of mobile internet and the popularity of smartphones have played a crucial role in driving this digital growth.
+</p>
+
+  <h3>Mobile Internet and Smartphone Usage</h3>
+  <p>Across the MENA region, mobile internet usage has overtaken fixed broadband as the dominant mode of access. From 2016 to 2021, the number of mobile internet users grew from 130 million to over 180 million, especially in countries like Egypt, Morocco, and Tunisia (Internet Society).<br><br>
+In Lebanon, mobile internet is a critical enabler of digital engagement. Smartphone penetration is high, with most citizens relying on mobile networks for access to news, social media, education, and business. Despite economic setbacks, this trend continues thanks to widespread mobile adoption and the flexibility of mobile data plans.
+</p>
+
+  <h3>Internet Speeds and Infrastructure Challenges</h3>
+  <p>While internet access is widespread, infrastructure quality varies significantly across the region. Lebanon, in particular, faces ongoing issues with network reliability and speed due to its economic crisis. According to a 2024 report by Freedom House, the median fixed-line broadband speed in Lebanon was 12.49 Mbps, and the median mobile download speed stood at 35.58 Mbps (Freedom House - Lebanon 2024).<br><br>
+The lack of consistent investment in telecom infrastructure and frequent power outages have hindered improvements. Moreover, only 39% of Lebanon's most-visited websites are hosted or cached locally, falling short of the Internet Society's 50% benchmark for local content availability (Internet Society Pulse - Lebanon).
+</p>
+
+  <h3>Government Initiatives and Digital Transformation</h3>
+  <p>Governments in the Middle East are actively promoting digital transformation. Countries like the UAE and Saudi Arabia are investing heavily in 5G rollout, smart city projects, and digital inclusion initiatives. Lebanon, though facing funding challenges, has seen some progress with e-government services and support for tech startups through initiatives from the Ministry of Telecommunications and international development partners (Trade.gov - Lebanon Digital Economy).</p>
+
+  <h3>The Road Ahead</h3>
+  <p>While the Middle East—and Lebanon in particular—has made impressive strides in internet adoption, gaps in rural access, affordability, and infrastructure reliability remain major obstacles. Broader deployment of fiber-optic networks, continued support for mobile technologies, and international collaboration will be essential to sustaining growth.<br><br>
+Lebanon must continue working toward improving its infrastructure and expanding rural connectivity to keep pace with regional trends. The rising demand for digital services, remote education, mobile payments, and e-commerce makes internet access more essential than ever.
+</p>
+ <button class="back-button" onclick="goBack()">← Back</button>
+</div>
+
+ 
+</div>
+</main>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+  const toggleBtn = document.getElementById('toggleSidebar');
+  const sidebar = document.getElementById('sidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+
+  function openTopic(id) {
+    document.getElementById('welcomeBox').style.display = 'none';
+    document.getElementById('topic' + id).style.display = 'block';
+  }
+
+  function goBack() {
+    document.querySelectorAll('.topic-view').forEach(el => el.style.display = 'none');
+    document.getElementById('welcomeBox').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
