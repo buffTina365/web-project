@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <title>Home page</title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\Admin\Desktop\WEBP\USEK.jpeg">
+  <style>
+   @import url('HPCSSF.css');
+  </style>
+</head>
+<body>
+
+  <header>
+    <button id="toggleSidebar"><ion-icon name="list-outline"></ion-icon></button>
+    <h1>Web Project</h1>
+	<div id="headernav">
+  <nav>
+  <ul>
+  <li><a href="Research.html">Research</a></li>
+  <li><a href="#">Schedules</a></li>
+  <li><a href="#">Resumes</a></li>
+  <li><a href="mediaPhoto.html">Photo Gallery</a></li>
+  <li><a href="#">Contact Us</a></li>
+  <li id="quiz"><a href="#">Quiz</a></li>
+  </ul>
+  </nav>
+  </div>
+  </header>
+
+  <aside id="sidebar">
+    <nav>
+      <ul>
+	  <li><a href="">test</a></li>
+		<li><a href="#HPMT">Welcome</a></li>
+        <li><a href="#HPST">Explore</a></li>
+		<li><a href="#exp">Research</a></li>
+		<li><a href="#res">Schedules</a></li>
+		<li><a href="#sched">Resumes</a></li>
+		<li><a href="#resu">Photo Gallery</a></li>
+		<li><a href="#pg">Contact Us</a></li>
+		<li><a href="#cu">Quiz</a></li>
+		<li><a href="#qz">Footer</a></li>
+      </ul>
+    </nav>
+  </aside>
+  
+
+  <main>
+  <div id="HPBG">
+ <h1 id="HPMT"> Welcome!</h1>
+ <p id="HPMD"> We're glad you're here! Feel free to explore the different sections, learn more about our ideas, and see how the project has come together. Thanks for visiting!</p>
+  </div>
+  <div id="divh1">
+  <h1 id="HPST"><ion-icon name="home"></ion-icon>&nbsp Home Page</h1>
+  <h2 id="exp"> Explore Our Navigation Bar</h2>
+  
+    <p>To help you get the most out of our website, we’ve provided a quick overview of each item in the navigation bar. Whether you’re here to learn more, get support, or explore our offerings, this guide will help you find exactly what you’re looking for.</p>
+	</div>
+	<div id="divh2">
+	<div id="divh2p2">
+	<h2 id="res"><ion-icon name="reader-outline"></ion-icon> <a href="research.html">Research</h2></a>
+	<p>Our research page delves into the evolution of the internet, tracing its history from early networks to the global infrastructure we rely on today. We explore key technological milestones, the impact of the internet on society, and how its development varies across different regions of the world. This page is also available in Arabic.</p>
+	</div>
+	<img src="C:\Users\Admin\Desktop\WEBP\navItemsPics\navpic1.jpg" class="imgh1">
+	</div>
+	<div id="divh3">
+	<div id="divh2p3">
+	<h2 id="sched"><ion-icon name="alarm-outline"></ion-icon><a href="#"> Schedules</h2></a>
+	<p>This page provides a clear overview of the weekly schedules for three team members. Whether you're coordinating meetings, planning collaborations, or just staying in sync, you’ll find all the key availability details right here.</p>
+	</div>
+	<img src="C:\Users\Admin\Desktop\WEBP\navItemsPics\navpic2.jpg" class="imgh1">
+	</div>
+	<div id="divh3">
+	<div id="divh2p3">
+	<h2 id="resu"><ion-icon name="id-card-outline"></ion-icon> <a href="#">Resumes</h2></a>
+	<p>The web page showcases the resumes of the three team members contributing to the project. Each resume is presented in a clean, organized layout, featuring a brief professional summary, key skills, work experience, and education details.Users can easily navigate between the resumes, making it a convenient and professional resource for anyone interested in the team’s background.</p>
+	</div>
+	<img src="C:\Users\Admin\Desktop\WEBP\navItemsPics\navpic3.jpg" class="imgh1">
+	</div>
+	<div id="divh2">
+	<div id="divh2p2">
+	<h2 id="pg"><ion-icon name="images-outline"></ion-icon><a href="research.html"> Photo Gallery</h2></a>
+	<p>The web page features a vibrant display of the team members' favorite musical albums, with each album represented by its cover photo.The design invites visitors to explore the team's musical tastes and discover the albums that inspire and motivate them.</p>
+	</div>
+	<img src="C:\Users\Admin\Desktop\WEBP\navItemsPics\navpic4.jpg" class="imgh1">
+	</div>
+	<div id="divh2">
+	<div id="divh2p2">
+	<h2 id="cu"><ion-icon name="mail-outline"></ion-icon><a href="research.html"> Contact US</h2></a>
+	<p>The web page provides a straightforward and accessible way to contact the team members.A brief message or call-to-action encourages visitors to reach out for inquiries, collaborations, or feedback. The page ensures that getting in touch with the team is quick, efficient, and seamless.</p>
+	</div>
+	<img src="C:\Users\Admin\Desktop\WEBP\navItemsPics\navpic5.jpg" class="imgh1">
+	</div>
+	<div id="divh2">
+	<div id="divh2p2">
+	<h2 id="qz"><ion-icon name="bulb-outline"></ion-icon><a href="research.html"> Quiz</h2></a>
+	<p>The web page features an engaging quiz designed to test visitors' knowledge of the information presented on the project's research page. This interactive experience not only reinforces the information but also encourages users to explore the research content more thoroughly.</p>
+	</div>
+	<img src="C:\Users\Admin\Desktop\WEBP\navItemsPics\navpic6.jpg" class="imgh1">
+	</div>
+	
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	
+	
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleSidebar');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  </script>
+  <footer>
+  Christina ElHaddad, Elie Gebrael, Gaelle Medawar &copy All Rights Reserved
+  </footer>
+
+</body>
+</html>
